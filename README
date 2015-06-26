@@ -1,0 +1,26 @@
+Python 2D Polygon Tools
+--------------------
+
+I wrote this script and associated tests as a code test for a company I interviewed for last year. This is not actually currently working. If I had put this in version control in the first place before I started tinkering, it would be working better.
+
+I still believe there was a minor bug with my implementation of the sorting of the points (in counter-clockwise order, for one of the algorithms) or else the line intersection function. It's been so long I can't remember. Maybe having this up here will shame me into fixing it.
+
+Tests
+-----
+
+Tests are great! And the company insisted, so I did attempt a test-driven development process. The tests are designed to be used with Nose (https://pypi.python.org/pypi/nose/). Nose looks in the standard locations for any function with the string "test" in it. I find not having to worry about creating a class, setup, teardown, etc. makes the mental barriers to writing unit tests much lower. And Nose extends unittest, so it still has all of that functionality.
+
+Also included is JSON file containing shape data for several shapes.
+
+Usage
+-----
+
+Does anyone have an actual use for this?
+
+The package is two classes: Point and Polygon. Pretty self-explanatory, except that can create Point objects with either two separate arguments or a tuple! Amazing flexibility for the end user!
+
+There are also many member functions of the Polygon class that test for convexity, separateness, and other properties of polygons.
+
+If you type <code>python shapes.py shapes.json</code> it will run all of the possible Polygon class's member functions against all the other polygons to  detect containment, separateness, etc.
+
+Hopefully this will help someone learn and provide a fun little challenge to debug if you're a novice programmer and want to debug/improve it.
