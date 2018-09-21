@@ -3,7 +3,7 @@ Python 2D Polygon Tools
 
 I wrote this script and associated tests as a code test for a company I interviewed for last year. This is not actually currently working. If I had put this in version control in the first place before I started tinkering, it would be working better.
 
-I still believe there was a minor bug with my implementation of the sorting of the points (in counter-clockwise order, for one of the algorithms) or else the line intersection function. It's been so long I can't remember. Maybe having this up here will shame me into fixing it.
+I still believe there was a minor bug with my implementation of the sorting of the points (in counter-clockwise order, for one of the algorithms) or else the line intersection function. It's been so long I can't remember.
 
 Tests
 -----
